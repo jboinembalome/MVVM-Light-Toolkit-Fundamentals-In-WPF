@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM Light Toolkit - Fundamentals", "MVVM Light Toolkit - Fundamentals\MVVM Light Toolkit - Fundamentals.csproj", "{B1D3DF3F-2BAC-480A-899E-6BCD31ADDB14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1D3DF3F-2BAC-480A-899E-6BCD31ADDB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D3DF3F-2BAC-480A-899E-6BCD31ADDB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D3DF3F-2BAC-480A-899E-6BCD31ADDB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D3DF3F-2BAC-480A-899E-6BCD31ADDB14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7B5A8FB-3C19-47AA-BFE8-E1885609BB9B}
+	EndGlobalSection
+EndGlobal
