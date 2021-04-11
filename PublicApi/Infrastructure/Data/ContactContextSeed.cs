@@ -45,11 +45,11 @@ namespace PublicApi.Infrastructure.Data
         {
             return new List<Friend>()
             {
-                new Friend { Id = 1, FirstName = "Velazquez", LastName = "Smethley", Birthday = new DateTime(1990, 2, 12), Message = "Hello world !", Picture = "https://localhost:44376/api/picture/Abbott.jpg" },
-                new Friend { Id = 2, FirstName = "Abbott", LastName = "Keitch", Birthday = new DateTime(1989, 3, 13), Message = "Good Bye !", Picture = "https://localhost:44376/api/picture/Abbott.jpg" },
-                new Friend { Id = 3, FirstName = "Christy", LastName = "Camacho", Birthday = new DateTime(1988, 4, 14), Message = "Happy birthday !", Picture = "https://localhost:44376/api/picture/Christy.jpg" },
-                new Friend { Id = 4, FirstName = "Nora", LastName = "Franklin", Birthday = new DateTime(1987, 5, 15), Message = "Happy new year !", Picture = "https://localhost:44376/api/picture/Nora.jpg" },
-                new Friend { Id = 5, FirstName = "Tillman", LastName = "Lee", Birthday = new DateTime(1986, 6, 16), Message = "Good morning !", Picture = "https://localhost:44376/api/picture/Tillman.jpg" } 
+                new Friend { Id = 1, FirstName = "Velazquez", LastName = "Smethley", Birthday = new DateTime(1990, 2, 12), Message = "Hello world !", Picture = "https://localhost:44376/api/pictures/Velazquez.jpg" },
+                new Friend { Id = 2, FirstName = "Abbott", LastName = "Keitch", Birthday = new DateTime(1989, 3, 13), Message = "Good Bye !", Picture = "https://localhost:44376/api/pictures/Abbott.jpg" },
+                new Friend { Id = 3, FirstName = "Christy", LastName = "Camacho", Birthday = new DateTime(1988, 4, 14), Message = "Happy birthday !", Picture = "https://localhost:44376/api/pictures/Christy.jpg" },
+                new Friend { Id = 4, FirstName = "Nora", LastName = "Franklin", Birthday = new DateTime(1987, 5, 15), Message = "Happy new year !", Picture = "https://localhost:44376/api/pictures/Nora.jpg" },
+                new Friend { Id = 5, FirstName = "Tillman", LastName = "Lee", Birthday = new DateTime(1986, 6, 16), Message = "Good morning !", Picture = "https://localhost:44376/api/pictures/Tillman.jpg" } 
             };
         }
     }
