@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Navigation;
 
 namespace WhyMvvm
 {
-    public partial class DetailsPage : Window
+    public partial class DetailsPage : Page
     {
         public DetailsPage()
         {
@@ -57,7 +56,7 @@ namespace WhyMvvm
                 MessageBox.Show("Error");
             }
 
-            this.Close();
+            base.NavigationService.GoBack();
         }
     }
 }

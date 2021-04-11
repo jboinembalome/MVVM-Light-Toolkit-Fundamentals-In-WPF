@@ -23,6 +23,7 @@ namespace WhyMvvm
         public MainWindow()
         {
             InitializeComponent();
+            Frame.Content = new MainPage();
         }
     }
 }

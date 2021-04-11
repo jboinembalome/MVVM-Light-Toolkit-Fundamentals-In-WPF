@@ -2,9 +2,9 @@
 
 namespace WhyMvvm
 {
-    public partial class DetailsPage : Page
+    public partial class MainPage : Page
     {
-        public DetailsPage()
+        public MainPage()
         {
             InitializeComponent();
         }

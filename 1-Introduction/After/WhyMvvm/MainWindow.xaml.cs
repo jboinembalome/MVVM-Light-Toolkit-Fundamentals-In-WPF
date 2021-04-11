@@ -1,7 +1,4 @@
-﻿using System.Linq;
-using System.Windows;
-using System.Windows.Controls;
-using WhyMvvm.Model;
+﻿using System.Windows;
 
 namespace WhyMvvm
 {
@@ -10,26 +7,7 @@ namespace WhyMvvm
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private async void RefreshClick(object sender, RoutedEventArgs e)
-        {
-            var service = new FriendsService();
-            var list = (await service.Refresh()).ToList();
-
-            List.ItemsSource = list;
-
-        }
-
-        private void ListSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            Friend friend = List.SelectedItem as Friend;
-
-            if (friend == null)
-                return;
-
-            App.SelectedFriend = friend;
-            new DetailsPage().Show();
+            Frame.Content = new MainPage();
         }
     }
 }
