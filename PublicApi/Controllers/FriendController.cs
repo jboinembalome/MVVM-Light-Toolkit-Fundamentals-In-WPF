@@ -76,7 +76,7 @@ namespace PublicApi.Controllers
         /// <returns></returns>
         [HttpPut]
         [Route("/api/friends/{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Update([FromRoute][Required] int id, [FromBody] Friend friend)
@@ -86,9 +86,11 @@ namespace PublicApi.Controllers
             if (friendToUpdate == null)
                 return NotFound();
 
-            await _friendService.UpdateAsync(friend);
+            friendToUpdate.UpdateDetails(friend.FirstName, friend.LastName);
 
-            return NoContent();
+            await _friendService.UpdateAsync(friendToUpdate);
+
+            return Ok(friendToUpdate);
         }
 
         /// <summary>

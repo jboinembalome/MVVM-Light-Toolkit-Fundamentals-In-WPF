@@ -19,5 +19,11 @@ namespace PublicApi.Entities
         public string Location { get; set; }
 
         public string Message { get; set; }
+
+        public void UpdateDetails(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
     }
 }
