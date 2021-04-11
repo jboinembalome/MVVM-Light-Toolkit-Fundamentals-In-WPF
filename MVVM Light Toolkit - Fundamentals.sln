@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicApi", "PublicApi\PublicApi.csproj", "{85805112-4508-4B9C-B4BC-CF08440F0B13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicApi", "PublicApi\PublicApi.csproj", "{85805112-4508-4B9C-B4BC-CF08440F0B13}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Introduction", "1-Introduction", "{3B3E958D-233B-42EC-B883-F839D7D93F97}"
 EndProject
@@ -45,6 +45,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyMvvm", "1-Introduction\B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyMvvm", "1-Introduction\After\WhyMvvm\WhyMvvm.csproj", "{D2CD0290-608E-4B05-A1F2-26B0DFDAC15A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyMvvm", "2-Refactoring\Before\WhyMvvm\WhyMvvm.csproj", "{AF5D1E88-4C43-4DFD-8032-E77E359C7142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyMvvm", "2-Refactoring\After\WhyMvvm\WhyMvvm.csproj", "{6528588B-FBA5-4526-8A21-BAEF783912F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyMvvm.Test", "2-Refactoring\After\WhyMvvm.Test\WhyMvvm.Test.csproj", "{B6ADF819-0A7F-42C6-93F7-369ADA4347F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +69,18 @@ Global
 		{D2CD0290-608E-4B05-A1F2-26B0DFDAC15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2CD0290-608E-4B05-A1F2-26B0DFDAC15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2CD0290-608E-4B05-A1F2-26B0DFDAC15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5D1E88-4C43-4DFD-8032-E77E359C7142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5D1E88-4C43-4DFD-8032-E77E359C7142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5D1E88-4C43-4DFD-8032-E77E359C7142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5D1E88-4C43-4DFD-8032-E77E359C7142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6528588B-FBA5-4526-8A21-BAEF783912F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6528588B-FBA5-4526-8A21-BAEF783912F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6528588B-FBA5-4526-8A21-BAEF783912F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6528588B-FBA5-4526-8A21-BAEF783912F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ADF819-0A7F-42C6-93F7-369ADA4347F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ADF819-0A7F-42C6-93F7-369ADA4347F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ADF819-0A7F-42C6-93F7-369ADA4347F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ADF819-0A7F-42C6-93F7-369ADA4347F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +100,9 @@ Global
 		{42EBFCA1-19DD-4865-AE11-A295E770CDDE} = {92B3C373-D649-47C6-849B-F4F7F94F1B17}
 		{9B5FEDA6-F5E4-402A-895A-683BA81F9449} = {7FB04350-0822-43B4-A220-A9C97900F84B}
 		{D2CD0290-608E-4B05-A1F2-26B0DFDAC15A} = {3B541B9B-81B8-4108-A1FC-6AE15CA86AF1}
+		{AF5D1E88-4C43-4DFD-8032-E77E359C7142} = {A57B4D1C-76F3-4379-B312-9B7BE1EDEC30}
+		{6528588B-FBA5-4526-8A21-BAEF783912F1} = {074A44E6-4187-4C9D-A4A0-FBC5BAA33064}
+		{B6ADF819-0A7F-42C6-93F7-369ADA4347F5} = {074A44E6-4187-4C9D-A4A0-FBC5BAA33064}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7B5A8FB-3C19-47AA-BFE8-E1885609BB9B}
