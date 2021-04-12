@@ -1,0 +1,60 @@
+﻿<Page x:Class="WhyMvvm.DetailsPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Style="{StaticResource WindowStyle}"
+        mc:Ignorable="d"
+        Height="auto" Width="auto"
+        DataContext="{Binding Source={StaticResource Main}}">
+    <Grid x:Name="LayoutRoot">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0"
+                    Margin="12,17,0,28">
+                <TextBlock Text="{StaticResource AppName}"
+                       Style="{StaticResource AppNameTextStyle}" />
+
+                <TextBlock Text="details"
+                       Style="{StaticResource ViewNameTextStyle}"/>
+            </StackPanel>
+
+            <StackPanel x:Name="ContentPanel"
+                    Margin="12,0,12,0"
+                    Grid.Row="1">
+                <TextBlock Text="First Name"
+                       Style="{StaticResource LabelTextStyle}" />
+
+            <TextBox x:Name="FirstNameTextBox" 
+                     Text="{Binding SelectedFriend.FirstName, Mode=TwoWay}"/>
+
+            <TextBlock Text="Last Name"
+                       Style="{StaticResource LabelTextStyle}" />
+
+            <TextBox x:Name="LastNameTextBox" 
+                     Text="{Binding SelectedFriend.LastName, Mode=TwoWay}"/>
+
+            <TextBlock Text="Preview"
+                       Style="{StaticResource LabelTextStyle}" />
+
+            <StackPanel Margin="12,12,12,0"
+                        Orientation="Horizontal">
+                <TextBlock Text="{Binding SelectedFriend.FirstName}" />
+                <TextBlock Text=" " />
+                <TextBlock Text="{Binding SelectedFriend.LastName}" />
+            </StackPanel>
+
+            <Button Margin="10" Height="auto" Background="Gray" Click="SaveClick">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <Image Source="/Assets/AppBar/save.png"  Width="40" Height="40"/>
+                        <TextBlock Text="Save" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+</Page>
