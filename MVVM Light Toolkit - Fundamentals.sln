@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyMvvm.Test", "3-Core\Afte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commanding", "3-Core\After\Commanding\Commanding\Commanding.csproj", "{C8C516F1-458E-46EF-A1C6-DFFB3A462AD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayCommanding", "3-Core\After\RelayCommanding\RelayCommanding.csproj", "{9333086B-ABF9-4501-95F4-2BBAC1DE8333}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{C8C516F1-458E-46EF-A1C6-DFFB3A462AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C516F1-458E-46EF-A1C6-DFFB3A462AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C516F1-458E-46EF-A1C6-DFFB3A462AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9333086B-ABF9-4501-95F4-2BBAC1DE8333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9333086B-ABF9-4501-95F4-2BBAC1DE8333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9333086B-ABF9-4501-95F4-2BBAC1DE8333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9333086B-ABF9-4501-95F4-2BBAC1DE8333}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +162,7 @@ Global
 		{2720AD84-337E-418C-9434-EA60E7857F19} = {A77E5F02-E997-422A-9531-D47848FE96C7}
 		{7C309ECC-5FCB-4617-9B50-C8781CF0CA08} = {A77E5F02-E997-422A-9531-D47848FE96C7}
 		{C8C516F1-458E-46EF-A1C6-DFFB3A462AD4} = {C7301C58-82A6-4B15-8CAD-CDF18D3FACE9}
+		{9333086B-ABF9-4501-95F4-2BBAC1DE8333} = {30734340-1627-4C77-A069-A4C401596BE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7B5A8FB-3C19-47AA-BFE8-E1885609BB9B}
