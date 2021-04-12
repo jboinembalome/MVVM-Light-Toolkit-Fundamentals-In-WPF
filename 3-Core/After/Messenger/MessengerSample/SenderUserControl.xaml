@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="MessengerSample.SenderUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:MessengerSample.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <UserControl.Resources>
+        <viewModel:SenderViewModel x:Key="Sender" />
+    </UserControl.Resources>
+
+    <UserControl.DataContext>
+        <Binding Source="{StaticResource Sender}" />
+    </UserControl.DataContext>
+
+    <StackPanel Background="Blue">
+        <TextBox x:Name="LogMessageText"
+                 FontSize="20"
+                 Margin="20" />
+
+        <Button Content="Send"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Background="Blue"
+                Foreground="White"
+                FontWeight="Bold"
+                BorderBrush="White"
+                BorderThickness="2"
+                Margin="20"
+                Command="{Binding SendCommand}"
+                CommandParameter="{Binding ElementName=LogMessageText, Path=Text}"/>
+
+        <Button Content="Send with feedback"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Background="Blue"
+                Foreground="White"
+                FontWeight="Bold"
+                BorderBrush="White"
+                BorderThickness="2"
+                Margin="20"
+                Command="{Binding SendWithFeedbackCommand}"
+                CommandParameter="{Binding ElementName=LogMessageText, Path=Text}" />
+    </StackPanel>
+</UserControl>
