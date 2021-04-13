@@ -1,0 +1,19 @@
+﻿<Application x:Class="WhyMvvm.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:vm="clr-namespace:WhyMvvm.ViewModel"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <vm:MainViewModel x:Key="Main" />
+            
+            <local:LocalizedStrings xmlns:local="clr-namespace:WhyMvvm"
+                                    x:Key="LocalizedStrings" />
+            <System:String x:Key="AppName">MVVM LIGHT INTRO</System:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
