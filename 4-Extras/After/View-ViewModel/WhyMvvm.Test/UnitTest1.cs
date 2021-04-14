@@ -79,5 +79,9 @@ namespace WhyMvvm.Test
         {
         }
 
+        public void NavigateTo(Uri uri, object state)
+        {
+        }
+
     }
 }
