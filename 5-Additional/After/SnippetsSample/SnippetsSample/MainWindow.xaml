@@ -1,0 +1,69 @@
+﻿<Window x:Class="SnippetsSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Height="417"
+        Width="537"
+        Title="MVVM Light Application"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBox Text="{Binding FirstName}"
+                 Grid.Row="1"
+                 FontSize="24"
+                 Margin="10,0" />
+
+        <TextBox Text="{Binding LastName}"
+                 Grid.Row="1"
+                 FontSize="24"
+                 Margin="10,0"
+                 Grid.Column="1" />
+
+        <TextBox Text="{Binding Age}"
+                 Grid.Row="3"
+                 FontSize="24"
+                 Margin="10,0" />
+
+        <Button Content="Show full name"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                FontSize="24"
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="10,0,0,0"
+                Command="{Binding ShowFullNameCommand, Mode=OneWay}" />
+
+        <TextBox x:Name="EmailTextBox"
+                 Grid.Row="7"
+                 FontSize="24"
+                 Margin="10,0" />
+
+        <Button Content="Send email"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                FontSize="24"
+                Grid.Row="7"
+                Grid.Column="1"
+                Command="{Binding SendEmailCommand, Mode=OneWay}"
+                CommandParameter="{Binding Text, ElementName=EmailTextBox}"
+                Margin="10,0,0,0" />
+    </Grid>
+</Window>

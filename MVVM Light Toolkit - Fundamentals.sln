@@ -141,6 +141,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetLibsOnly", "5-Addition
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetFull", "5-Additional\After\NugetFull\NugetFull\NugetFull.csproj", "{2CFBA846-0531-4409-8283-A4875589F300}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnippetsSample", "5-Additional\After\SnippetsSample\SnippetsSample\SnippetsSample.csproj", "{ED437F71-46C7-4F4D-85A7-18EB0D8EB75B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +285,10 @@ Global
 		{2CFBA846-0531-4409-8283-A4875589F300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CFBA846-0531-4409-8283-A4875589F300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CFBA846-0531-4409-8283-A4875589F300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED437F71-46C7-4F4D-85A7-18EB0D8EB75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED437F71-46C7-4F4D-85A7-18EB0D8EB75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED437F71-46C7-4F4D-85A7-18EB0D8EB75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED437F71-46C7-4F4D-85A7-18EB0D8EB75B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -350,6 +356,7 @@ Global
 		{7521C5EA-394A-474D-B783-F94062E8BB44} = {5B62473F-EC1F-4498-8821-CA0205EEE22B}
 		{34DACCD4-323E-4F09-9A2C-7DEDA4FF3669} = {1D70A13C-7F4D-4500-9C26-A55C92C7AED9}
 		{2CFBA846-0531-4409-8283-A4875589F300} = {6D37CF58-5C91-473E-9C00-FF741927F7BC}
+		{ED437F71-46C7-4F4D-85A7-18EB0D8EB75B} = {2ABAD49D-AB9C-42AE-8755-FF7A4D0E50CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7B5A8FB-3C19-47AA-BFE8-E1885609BB9B}
