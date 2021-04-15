@@ -22,7 +22,7 @@ namespace PublicApi.Controllers
         /// <summary>
         /// Get a friend.
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of friend.</param>
         /// <returns></returns>
         [HttpGet]
         [Route("/api/friends/{id}", Name = "GetById")]
@@ -55,7 +55,7 @@ namespace PublicApi.Controllers
         /// Add a friend.
         /// </summary>
         /// <remarks></remarks>
-        /// <param name="friend"></param>
+        /// <param name="friend">New friend.</param>
         /// <returns>A newly created Friend.</returns>
         [HttpPost]
         [Route("/api/friends")]
@@ -71,8 +71,8 @@ namespace PublicApi.Controllers
         /// <summary>
         /// Update a friend.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="friend"></param>
+        /// <param name="id">Id of friend.</param>
+        /// <param name="friend">Updated friend.</param>
         /// <returns></returns>
         [HttpPut]
         [Route("/api/friends/{id}")]
@@ -96,7 +96,7 @@ namespace PublicApi.Controllers
         /// <summary>
         /// Delete a friend.
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of friend.</param>
         /// <returns></returns>
         [HttpDelete]
         [Route("/api/friends/{id}")]
