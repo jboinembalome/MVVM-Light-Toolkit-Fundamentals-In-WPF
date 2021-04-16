@@ -120,7 +120,7 @@
                         Background="Transparent"
                         BorderBrush="Transparent"
                         HorizontalAlignment="Left"
-                        Command="{Binding ExpandCommand, Mode=OneWay}" />
+                        Command="{Binding ExpandCollapseCommand, Mode=OneWay}" />
 
                 <CheckBox x:Name="SelectionCheckBox"
                           HorizontalAlignment="Left"

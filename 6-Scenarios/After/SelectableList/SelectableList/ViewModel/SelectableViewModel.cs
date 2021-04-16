@@ -58,14 +58,14 @@ namespace SelectableList.ViewModel
             }
         }
 
-        private RelayCommand _expandCommand;
+        private RelayCommand _expandCollapseCommand;
 
-        public RelayCommand ExpandCommand
+        public RelayCommand ExpandCollapseCommand
         {
             get
             {
-                return _expandCommand
-                    ?? (_expandCommand = new RelayCommand(
+                return _expandCollapseCommand
+                    ?? (_expandCollapseCommand = new RelayCommand(
                     () =>
                     {
                         IsExpanded = true;
