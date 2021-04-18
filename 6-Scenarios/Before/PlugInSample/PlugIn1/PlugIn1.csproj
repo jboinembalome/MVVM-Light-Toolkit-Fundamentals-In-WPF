@@ -68,9 +68,6 @@
     <Compile Include="ViewModel\PartialViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\PlugInSample.Contracts\PlugInSample.Contracts.csproj">
       <Project>{b3c65978-e20e-4112-8290-1e2b7dd14018}</Project>
       <Name>PlugInSample.Contracts</Name>
@@ -81,6 +78,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

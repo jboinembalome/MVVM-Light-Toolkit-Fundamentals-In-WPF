@@ -1,7 +1,6 @@
-﻿using GalaSoft.MvvmLight;
+﻿using CommonServiceLocator;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
-using Microsoft.Practices.ServiceLocation;
-using System.Windows;
 using WhyMvvm.Design;
 using WhyMvvm.Helpers;
 using WhyMvvm.Model;
