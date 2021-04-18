@@ -11,8 +11,6 @@
 
             <vm:MainViewModel x:Key="Main" />
             
-            <local:LocalizedStrings xmlns:local="clr-namespace:WhyMvvm"
-                                    x:Key="LocalizedStrings" />
             <System:String x:Key="AppName">MVVM LIGHT INTRO</System:String>
         </ResourceDictionary>
     </Application.Resources>

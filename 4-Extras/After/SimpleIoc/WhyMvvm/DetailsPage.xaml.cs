@@ -26,13 +26,11 @@ namespace WhyMvvm
 
             var mainVm = ServiceLocator.Current.GetInstance<MainViewModel>();
             mainVm.SaveCommand.Execute(DataContext);
-
         }
 
         private void UpdateBinding()
         {
-            var textbox = FocusManager.GetFocusedElement(this) as TextBox;
-            if (textbox != null)
+            if (FocusManager.GetFocusedElement(this) is TextBox textbox)
             {
                 var binding = textbox.GetBindingExpression(TextBox.TextProperty);
                 binding.UpdateSource();

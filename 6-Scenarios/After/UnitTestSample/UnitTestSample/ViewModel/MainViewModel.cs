@@ -73,7 +73,7 @@ namespace UnitTestSample.ViewModel
         {
             _dataService = dataService;
             _navigationService = navigationService;
-            Task task = Initialize();
+            _ = Initialize();
         }
 
         private async Task Initialize()
@@ -83,7 +83,7 @@ namespace UnitTestSample.ViewModel
                 var item = await _dataService.GetData();
                 WelcomeTitle = item.Property1 + " / " + item.Property2;
             }
-            catch (Exception ex)
+            catch
             {
                 // Report error here
             }

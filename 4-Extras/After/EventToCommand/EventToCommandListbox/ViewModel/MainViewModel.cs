@@ -2,7 +2,6 @@ using EventToCommandListbox.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace EventToCommandListbox.ViewModel
@@ -20,7 +19,7 @@ namespace EventToCommandListbox.ViewModel
             Refresh();
         }
 
-        private async Task Refresh()
+        private void Refresh()
         {
             Items = new ObservableCollection<DataItemViewModel>();
 

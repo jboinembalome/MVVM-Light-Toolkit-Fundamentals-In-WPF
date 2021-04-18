@@ -11,8 +11,6 @@ namespace PlugInSample.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        private int _counterValue;
-
         private RelayCommand _refreshPlugInsCommand;
 
         public ObservableCollection<IPlugIn> PlugIns

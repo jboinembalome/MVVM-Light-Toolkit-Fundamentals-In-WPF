@@ -84,9 +84,6 @@
     <Compile Include="Helpers\IDialogService.cs" />
     <Compile Include="Helpers\INavigationService.cs" />
     <Compile Include="Helpers\NavigationService.cs" />
-    <Compile Include="Helpers\RelayCommand.cs" />
-    <Compile Include="Helpers\RelayCommandGeneric.cs" />
-    <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -96,7 +93,6 @@
     <Compile Include="Model\Friend.cs" />
     <Compile Include="Model\FriendsService.cs" />
     <Compile Include="Model\IFriendsService.cs" />
-    <Compile Include="Ressources\AppResources.Designer.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="DetailsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -137,7 +133,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ressources\AppResources.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

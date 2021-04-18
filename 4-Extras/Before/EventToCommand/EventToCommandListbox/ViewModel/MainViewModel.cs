@@ -20,7 +20,7 @@ namespace EventToCommandListbox.ViewModel
             Refresh();
         }
 
-        private async Task Refresh()
+        private void Refresh()
         {
             Items = new ObservableCollection<DataItemViewModel>();
 
