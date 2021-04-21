@@ -42,7 +42,7 @@ about MVVM Light by Laurent Bugnion, the popular toolkit to build client applica
   
 ## Get started
 
-After cloning or downloading the repository:, 
+After cloning or downloading the repository: 
 - Reinstall the NugGet packages (if it not already installed) with this command: "*Update-Package -reinstall*"
 - To change the startup project from the Solution Explorer, right-click the desired project and choose "Set as StartUp Project" 
 from the context-sensitive menu that is displayed. You can also choose this menu item from the Project menu. 
